@@ -8,6 +8,7 @@
     "start": "next start",
     "prepare": "tw-patch install",
     "lint": "next lint"
+    "postinstall": "tw-patch install"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
