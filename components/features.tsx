@@ -28,13 +28,13 @@ export default function Features() {
       icon: <Cross className="w-6 h-6" />,
       title: "Honest Dialogue",
       description:
-        "Perfectly adapted experiences across all devices, from desktop to mobile, without compromise.",
+        "Real conversations about faith, theology, and life over coffee—no pretense, just genuine wrestling with big ideas.",
     },
     {
       icon: <Handshake className="w-6 h-6" />,
       title: "Real Fellowship",
       description:
-        "uilding community through shared study, prayer, and friendship in the company of saints both ancient and present.",
+        "Building community through shared study, prayer, and friendship in the company of saints both ancient and present.",
     },
   ];
 
@@ -60,11 +60,10 @@ export default function Features() {
       y: 0,
       scale: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 45,
         damping: 15,
         mass: 0.85,
-        duration: 0.7,
       },
     },
   };
@@ -75,10 +74,9 @@ export default function Features() {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 50,
         damping: 12,
-        duration: 0.6,
       },
     },
   };
