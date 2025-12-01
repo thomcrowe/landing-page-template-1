@@ -48,26 +48,26 @@ export default function Hero() {
               className="mb-6"
             >
               <div className="inline-block border border-neutral-800 px-3 py-1 text-xs uppercase tracking-widest text-neutral-400">
-                Digital Design Studio
+                Saint John's Episcopal Church
               </div>
             </motion.div>
             <h1>
               <TextGenerateEffect
-                words="MINIMAL"
+                words="DEAD"
                 className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.2}
               />
               <TextGenerateEffect
-                words="BRUTALIST"
+                words="THEOLOGIANS"
                 className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter text-neutral-400"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.4}
               />
               <TextGenerateEffect
-                words="DESIGN"
+                words="SOCIETY"
                 className="text-5xl md:text-7xl lg:text-8xl font-bold m-2 leading-tight tracking-tighter"
                 duration={0.5}
                 speed={0.2}
@@ -81,8 +81,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-neutral-400 mb-8 max-w-md text-lg"
             >
-              We create minimalist digital experiences that make an impact. Raw,
-              unfiltered, and straight to the point.
+              We come together to read the Fathers, pray together, and see how the ancient faith shapes our modern lives. 
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -91,11 +90,11 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <button className="border border-white px-8 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors flex items-center justify-center">
-                View Our Work
+                Read with Us
                 <ArrowRight className="ml-2 h-4 w-4" />
               </button>
               <button className="border border-neutral-800 px-8 py-3 text-sm uppercase tracking-widest text-neutral-400 hover:border-neutral-600 hover:text-white transition-colors">
-                About Us
+                About DTS
               </button>
             </motion.div>
           </div>
@@ -128,7 +127,7 @@ export default function Hero() {
 
               {/* Main square container */}
               <motion.div
-                className="aspect-square relative overflow-hidden border border-neutral-800"
+                className="aspect-square relative overflow-hidden border border-neutral-800 group"
                 initial={{ opacity: 0, scale: 0.92 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{
@@ -149,70 +148,16 @@ export default function Hero() {
 
                 <div className="absolute inset-0 flex items-center justify-center">
                   <motion.div
-                    className="w-3/4 h-3/4 relative"
+                    className="w-full h-full relative"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: shapeAnimationDelay + 0.3 }}
                   >
-                    {/* Four lines - animate in sequence */}
-                    <motion.div
-                      className="absolute top-0 left-0 w-full h-1 bg-white"
-                      initial={{ scaleX: 0, originX: 0 }}
-                      animate={{ scaleX: 1 }}
-                      transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.4 }}
-                    ></motion.div>
-                    <motion.div
-                      className="absolute bottom-0 right-0 w-full h-1 bg-white"
-                      initial={{ scaleX: 0, originX: 1 }}
-                      animate={{ scaleX: 1 }}
-                      transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.5 }}
-                    ></motion.div>
-                    <motion.div
-                      className="absolute top-0 right-0 h-full w-1 bg-white"
-                      initial={{ scaleY: 0, originY: 0 }}
-                      animate={{ scaleY: 1 }}
-                      transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.6 }}
-                    ></motion.div>
-                    <motion.div
-                      className="absolute bottom-0 left-0 h-full w-1 bg-white"
-                      initial={{ scaleY: 0, originY: 1 }}
-                      animate={{ scaleY: 1 }}
-                      transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.7 }}
-                    ></motion.div>
-
-                    {/* Center square - last to appear */}
-                    <motion.div
-                      className="absolute top-1/4 left-1/4 w-1/2 h-1/2 border border-neutral-700 flex items-center justify-center"
-                      initial={{ opacity: 0, scale: 0.7 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{
-                        duration: 0.6,
-                        delay: shapeAnimationDelay + 0.8,
-                        type: "spring",
-                        stiffness: 100,
-                        damping: 15,
-                      }}
-                    >
-                      <motion.div
-                        className="w-3/4 h-3/4 bg-neutral-900 flex items-center justify-center"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5, delay: shapeAnimationDelay + 0.9 }}
-                      >
-                        <motion.div
-                          className="w-1/2 h-1/2 bg-white"
-                          initial={{ opacity: 0, scale: 0 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{
-                            duration: 0.5,
-                            delay: shapeAnimationDelay + 1.0,
-                            type: "spring",
-                            stiffness: 200,
-                            damping: 15,
-                          }}
-                        ></motion.div>
-                      </motion.div>
-                    </motion.div>
+                   <img
+                      src="/clergy/dts.avif"
+                      alt="Saints"
+                      className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105"
+                    />
                   </motion.div>
                 </div>
               </motion.div>
@@ -226,15 +171,6 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="absolute bottom-10 left-0 right-0 flex justify-center"
         >
-          <div className="flex items-center gap-8 border border-neutral-800 px-8 py-4">
-            <div className="text-xs uppercase tracking-widest text-neutral-400">
-              Scroll
-            </div>
-            <div className="h-px w-10 bg-neutral-800"></div>
-            <div className="text-xs uppercase tracking-widest text-neutral-400">
-              Discover
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

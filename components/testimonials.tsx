@@ -4,40 +4,46 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
 
-export default function Testimonials() {
+export default function Voices() {
   const [activeIndex, setActiveIndex] = useState(0)
 
-  const testimonials = [
+  const quotes = [
     {
-      quote:
-        "The minimalist approach perfectly captured our brand essence. Their attention to detail and focus on typography made our digital presence stand out.",
-      author: "Sarah Johnson",
-      role: "Creative Director, Studio Black",
+      text:
+        "God became man so that man might become god.",
+      author: "St. Athanasius",
+      source: "On the Incarnation",
     },
     {
-      quote:
-        "Working with this team was refreshing. They stripped away all the unnecessary elements and delivered a product that was both beautiful and functional.",
-      author: "Michael Chen",
-      role: "Founder, Monochrome",
+      text:
+        "Guard thou well this faith, and live in it, and take heed that no one rob thee of it.",
+      author: "St. Cyril of Jerusalem",
+      source: "Catechetical Lectures",
     },
     {
-      quote:
-        "Their brutalist design philosophy challenged our conventional thinking and resulted in a website that truly captures attention and drives engagement.",
-      author: "Emily Rodriguez",
-      role: "Marketing Lead, Contrast Inc.",
+      text:
+        "God judged it better to bring good out of evil than to suffer no evil to exist.",
+      author: "St. Augustine",
+      source: "The Enchiridion",
+    },
+    {
+      text:
+        "Theology without practice is the theology of demons.",
+      author: "St. Maximos the Confessor",
+      source: "Chapters on Theology",
     },
   ]
 
   const next = () => {
-    setActiveIndex((prev) => (prev + 1) % testimonials.length)
+    setActiveIndex((prev) => (prev + 1) % quotes.length)
   }
 
   const prev = () => {
-    setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
+    setActiveIndex((prev) => (prev - 1 + quotes.length) % quotes.length)
   }
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="voices" className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,12 +54,12 @@ export default function Testimonials() {
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-white/40"></div>
-            <div className="text-xs uppercase tracking-widest text-white/80">Testimonials</div>
+            <div className="text-xs uppercase tracking-widest text-white/80">Voices</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            What Our Clients
+            Wisdom from
             <br />
-            <span className="text-white/70">Say About Us</span>
+            <span className="text-white/70">The Saints</span>
           </h2>
         </motion.div>
 
@@ -74,13 +80,13 @@ export default function Testimonials() {
                   className="min-h-[200px] flex flex-col"
                 >
                   <blockquote className="text-2xl md:text-3xl font-light mb-8 leading-relaxed text-white">
-                    "{testimonials[activeIndex].quote}"
+                    "{quotes[activeIndex].text}"
                   </blockquote>
                   <div className="mt-auto flex items-center">
                     <div className="w-12 h-px bg-white/40 mr-4"></div>
                     <div>
-                      <div className="font-bold text-white">{testimonials[activeIndex].author}</div>
-                      <div className="text-white/70 text-sm">{testimonials[activeIndex].role}</div>
+                      <div className="font-bold text-white">{quotes[activeIndex].author}</div>
+                      <div className="text-white/70 text-sm">{quotes[activeIndex].source}</div>
                     </div>
                   </div>
                 </motion.div>
@@ -90,14 +96,14 @@ export default function Testimonials() {
             {/* Pagination indicator */}
             <div className="mt-8 flex items-center">
               <div className="text-white/60 text-sm mr-4">
-                {activeIndex + 1} / {testimonials.length}
+                {activeIndex + 1} / {quotes.length}
               </div>
               <div className="flex-1 h-px bg-white/20 relative">
                 <motion.div 
                   className="h-px bg-white absolute top-0 left-0"
                   initial={{ width: "0%" }}
                   animate={{ 
-                    width: `${((activeIndex + 1) / testimonials.length) * 100}%`,
+                    width: `${((activeIndex + 1) / quotes.length) * 100}%`,
                   }}
                   transition={{ duration: 0.3 }}
                 ></motion.div>

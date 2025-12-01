@@ -5,22 +5,22 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="text-2xl font-bold tracking-tighter">
-              MONO<span className="text-neutral-400">.</span>
+              DEAD THEOLOGIANS SOCIETY<span className="text-neutral-400">.</span>
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-8 md:items-center">
             <nav className="flex gap-6">
+              <a href="#about" className="text-neutral-400 hover:text-white transition-colors text-sm">
+                WHO WE ARE
+              </a>
               <a href="#features" className="text-neutral-400 hover:text-white transition-colors text-sm">
-                Features
+                WHAT WE DO
               </a>
               <a href="#work" className="text-neutral-400 hover:text-white transition-colors text-sm">
-                Work
+                READINGS
               </a>
-              <a href="#process" className="text-neutral-400 hover:text-white transition-colors text-sm">
-                Process
-              </a>
-              <a href="#pricing" className="text-neutral-400 hover:text-white transition-colors text-sm">
-                Pricing
+              <a href="#join-us" className="text-neutral-400 hover:text-white transition-colors text-sm">
+                JOIN US
               </a>
             </nav>
             <div className="h-6 w-px bg-neutral-800 hidden md:block"></div>
@@ -34,7 +34,7 @@ export default function Footer() {
                   />
                 </svg>
               </a>
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors" aria-label="Twitter">
+              <a href="https://x.com/dts" className="text-neutral-400 hover:text-white transition-colors" aria-label="Twitter">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-6 pt-8 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-neutral-400 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} MONO. All rights reserved.</p>
+          <p className="text-neutral-400 text-sm mb-4 md:mb-0">© {new Date().getFullYear()} DEAD THEOLOGIANS SOCIETY. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="text-neutral-400 hover:text-white transition-colors text-sm">
               Privacy Policy

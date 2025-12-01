@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Square, Circle, Triangle, Hexagon } from "lucide-react";
+import { Square, Circle, Handshake, Cross, Book, Church} from "lucide-react";
 
 export default function Features() {
   const sectionRef = useRef(null);
@@ -13,28 +13,28 @@ export default function Features() {
 
   const features = [
     {
-      icon: <Square className="w-6 h-6" />,
-      title: "Minimalist Design",
+      icon: <Book className="w-6 h-6" />,
+      title: "Ancient Wisdom",
       description:
-        "Clean, uncluttered interfaces that focus on content and functionality without unnecessary elements.",
+        "Reading the Church Fathers, discovering timeless truth that speaks across centuries to today's questions.",
     },
     {
-      icon: <Circle className="w-6 h-6" />,
-      title: "Brutalist Approach",
+      icon: <Church className="w-6 h-6" />,
+      title: "Living Tradition",
       description:
-        "Raw, honest design that embraces the digital medium without trying to mimic physical materials.",
+        "Taking what we learn from the Fathers and applying it to how we actually live, pray, and follow Christ.",
     },
     {
-      icon: <Triangle className="w-6 h-6" />,
-      title: "Responsive Layout",
+      icon: <Cross className="w-6 h-6" />,
+      title: "Honest Dialogue",
       description:
         "Perfectly adapted experiences across all devices, from desktop to mobile, without compromise.",
     },
     {
-      icon: <Hexagon className="w-6 h-6" />,
-      title: "Performance Focus",
+      icon: <Handshake className="w-6 h-6" />,
+      title: "Real Fellowship",
       description:
-        "Lightning-fast loading times and smooth interactions for optimal user experience.",
+        "uilding community through shared study, prayer, and friendship in the company of saints both ancient and present.",
     },
   ];
 
@@ -99,13 +99,13 @@ export default function Features() {
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-white/40"></div>
             <div className="text-xs uppercase tracking-widest text-white/80">
-              Our Approach
+              What We do
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            Minimalist Design
+            Ancient Faith
             <br />
-            <span className="text-white/70">Maximum Impact</span>
+            <span className="text-white/70">For Today's Church </span>
           </h2>
         </motion.div>
 

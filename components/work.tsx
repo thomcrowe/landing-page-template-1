@@ -10,28 +10,28 @@ export default function Work() {
 
   const projects = [
     {
-      title: "BRUTALIST",
-      subtitle: "Digital Platform",
-      image: "/works/1.webp?height=600&width=800",
+      title: "St. Athanasius",
+      subtitle: "On the Incarnation",
+      image: "/works/athanasius.webp?height=600&width=800",
+      year: "Current",
+    },
+    {
+      title: "St. Augustine",
+      subtitle: "The Enchideron",
+      image: "/works/augustine.webp?height=600&width=800",
+      year: "2025",
+    },
+    {
+      title: "St. Cyril of Jerusalem",
+      subtitle: "Catechetical Lectures",
+      image: "/works/cyril.webp?height=600&width=800",
+      year: "2024",
+    },
+    {
+      title: "Saint Maximos the Confessor",
+      subtitle: "On the Cosmic Mystery",
+      image: "/works/maximos.webp?height=600&width=800",
       year: "2023",
-    },
-    {
-      title: "MONOCHROME",
-      subtitle: "Brand Identity",
-      image: "/works/2.webp?height=600&width=800",
-      year: "2023",
-    },
-    {
-      title: "MINIMAL",
-      subtitle: "Web Experience",
-      image: "/works/3.webp?height=600&width=800",
-      year: "2022",
-    },
-    {
-      title: "CONTRAST",
-      subtitle: "Mobile Application",
-      image: "/works/4.webp?height=600&width=800",
-      year: "2022",
     },
   ]
 
@@ -47,16 +47,16 @@ export default function Work() {
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-white/40"></div>
-            <div className="text-xs uppercase tracking-widest text-white/80">Selected Work</div>
+            <div className="text-xs uppercase tracking-widest text-white/80">Seleted Works</div>
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4 md:mb-0 text-white">
               Our Latest
               <br />
-              <span className="text-white/70">Projects</span>
+              <span className="text-white/70">Reads</span>
             </h2>
             <button className="border-2 border-white/20 px-6 py-3 text-sm uppercase tracking-widest text-white/80 hover:border-white hover:text-white hover:bg-white/5 transition-all duration-300 flex items-center group">
-              View All Work
+              Learn More
               <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300" />
             </button>
           </div>

@@ -27,40 +27,42 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-white font-bold text-2xl tracking-tighter">
-            MONO<span className="text-neutral-400">.</span>
+            DEAD THEOLOGIANS SOCIETY<span className="text-neutral-400">.</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
             <Link
+              href="#about"
+              className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
+            >
+              Who We Are
+            </Link>
+            <Link
               href="#features"
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
-              Features
+              What We Do
             </Link>
             <Link
               href="#work"
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
-              Work
+              Readings
             </Link>
             <Link
-              href="#process"
+              href="#join-us"
               className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
             >
-              Process
-            </Link>
-            <Link
-              href="#pricing"
-              className="text-neutral-400 hover:text-white transition-colors text-sm uppercase tracking-widest"
-            >
-              Pricing
+              Join Us
             </Link>
           </nav>
 
           <div className="hidden md:block">
-            <button className="border border-white px-5 py-2 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
-              Contact
-            </button>
+            <Link href="#contact">
+              <button className="border border-white px-5 py-2 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
+                Contact
+              </button>
+            </Link>
           </div>
 
           <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
@@ -80,36 +82,38 @@ export default function Navbar() {
           <div className="container mx-auto px-4 py-8">
             <nav className="flex flex-col space-y-6">
               <Link
+                href="#about"
+                className="text-neutral-400 hover:text-white py-2 text-2xl font-light"
+                onClick={() => setIsOpen(false)}
+              >
+                Who We Are
+              </Link>
+              <Link
                 href="#features"
                 className="text-neutral-400 hover:text-white py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
-                Features
+                What We Do
               </Link>
               <Link
                 href="#work"
                 className="text-neutral-400 hover:text-white py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
-                Work
+                Readings
               </Link>
               <Link
-                href="#process"
+                href="#join-us"
                 className="text-neutral-400 hover:text-white py-2 text-2xl font-light"
                 onClick={() => setIsOpen(false)}
               >
-                Process
+                Join Us
               </Link>
-              <Link
-                href="#pricing"
-                className="text-neutral-400 hover:text-white py-2 text-2xl font-light"
-                onClick={() => setIsOpen(false)}
-              >
-                Pricing
+              <Link href="#contact" onClick={() => setIsOpen(false)}>
+                <button className="border border-white px-5 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full mt-4">
+                  Contact
+                </button>
               </Link>
-              <button className="border border-white px-5 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full mt-4">
-                Contact
-              </button>
             </nav>
           </div>
         </motion.div>

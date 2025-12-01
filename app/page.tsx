@@ -33,13 +33,16 @@ const ScrollRestoration = () => {
 // Lazy load components
 const Features = dynamic(() => import("@/components/features"));
 
+const About = dynamic(() => import("@/components/about"));
+
 const Work = dynamic(() => import("@/components/work"));
 
-const Process = dynamic(() => import("@/components/process"));
+const JoinUs = dynamic(() => import("@/components/join-us"));
+
 
 const Testimonials = dynamic(() => import("@/components/testimonials"));
 
-const Pricing = dynamic(() => import("@/components/pricing"));
+
 
 const Contact = dynamic(() => import("@/components/contact"));
 
@@ -75,20 +78,22 @@ export default function Home() {
       <Navbar />
       <Hero />
       <LazyLoad>
+        <About />
+      </LazyLoad>
+      <LazyLoad>
         <Features />
       </LazyLoad>
       <LazyLoad>
         <Work />
       </LazyLoad>
       <LazyLoad>
-        <Process />
+        <JoinUs />
       </LazyLoad>
+
       <LazyLoad>
         <Testimonials />
       </LazyLoad>
-      <LazyLoad>
-        <Pricing />
-      </LazyLoad>
+
       <LazyLoad>
         <Contact />
       </LazyLoad>

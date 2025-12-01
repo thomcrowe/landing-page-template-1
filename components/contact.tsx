@@ -28,9 +28,9 @@ export default function Contact() {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            Let's Work
+            Want more info on the
             <br />
-            <span className="text-white/70">Together</span>
+            <span className="text-white/70">Dead Theologians Society?</span>
           </h2>
         </motion.div>
 
@@ -75,7 +75,7 @@ export default function Contact() {
                 id="message"
                 rows={5}
                 className="w-full bg-white/5 border-2 border-white/20 p-3 text-white placeholder:text-white/30 focus:border-white focus:outline-none transition-colors"
-                placeholder="Tell us about your project..."
+                placeholder="Let us know if you have any questions!"
               ></textarea>
             </div>
             <button className="w-full bg-white text-black py-3 text-sm uppercase tracking-widest hover:bg-white/90 transition-colors relative group overflow-hidden">
@@ -100,7 +100,7 @@ export default function Contact() {
                     href="mailto:hello@mono.design"
                     className="text-white hover:text-white/70 transition-colors"
                   >
-                    hello@mono.design
+                    frthom@dts.org
                   </a>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function Contact() {
                     href="tel:+1234567890"
                     className="text-white hover:text-white/70 transition-colors"
                   >
-                    +1 (234) 567-890
+                    +1 (918) 346-5014
                   </a>
                 </div>
               </div>
@@ -131,9 +131,9 @@ export default function Contact() {
                     Address
                   </div>
                   <address className="not-italic text-white/80">
-                    123 Minimalist Street
+                    4200 S Atlanta Pl
                     <br />
-                    New York, NY 10001
+                    Tulsa, OK 74105
                     <br />
                     United States
                   </address>
