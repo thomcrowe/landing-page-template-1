@@ -35,7 +35,6 @@ export default function About() {
         type: "spring",
         stiffness: 50,
         damping: 12,
-        duration: 0.6,
       },
     },
   };
@@ -60,7 +59,6 @@ export default function About() {
         type: "spring",
         stiffness: 45,
         damping: 15,
-        duration: 0.6,
       },
     },
   };
