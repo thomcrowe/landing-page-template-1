@@ -32,7 +32,7 @@ export default function About() {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 50,
         damping: 12,
       },
@@ -56,7 +56,7 @@ export default function About() {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 45,
         damping: 15,
       },
