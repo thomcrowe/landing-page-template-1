@@ -40,10 +40,9 @@ export default function JoinUs() {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 50,
         damping: 12,
-        duration: 0.6,
       },
     },
   };
@@ -65,10 +64,9 @@ export default function JoinUs() {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 45,
         damping: 15,
-        duration: 0.6,
       },
     },
   };
