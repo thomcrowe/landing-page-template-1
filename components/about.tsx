@@ -98,14 +98,14 @@ export default function About() {
               animate={isInView ? "visible" : "hidden"}
             >
               <p className="text-2xl md:text-3xl font-light leading-tight mb-12 text-white">
-                The <span className="font-semibold">Dead Theologians Society</span> is a community of believers who gather to encounter the riches of Christian tradition through the writings of the Church Fathers—those giants of faith who lived, prayed, and theologized in the early centuries of Christianity.
+                The <span className="font-semibold">Dead Theologians Society</span> is a community of believers who gather to read, mark, and inwardly digest the beauty of Christian tradition through the writings of the saints and theologians. These are the faithful who lived, prayed, and taught throughout the church's history.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-white/70 leading-relaxed">
                 <p>
-                  We're convinced that the voices of Athanasius, Augustine, Chrysostom, Basil, and countless others aren't merely historical curiosities. They're living witnesses whose insights on Scripture, prayer, Christian living, and doctrinal truth remain profoundly relevant for the Church today.
+                  We believe that the voices of Athanasius, Augustine, Chrysostom, Basil, and countless others aren't merely historical works. They're living witnesses whose teach us about Scripture, prayer, Christian living, and doctrinal truths that can form and shape our Christian walk today.
                 </p>
                 <p>
-                  Through study, prayer, and fellowship, we seek to learn from these "dead theologians" so that their ancient faith might breathe new life into our modern walk with Christ.
+                  Through study, prayer, and fellowship, we seek to learn from these "dead theologians" so that their ancient faith continues to breathe life into our modern walk with Christ.
                 </p>
               </div>
             </motion.div>
@@ -133,9 +133,9 @@ export default function About() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="group border-2 border-white/20 bg-white/5 backdrop-blur-sm hover:border-white/50 hover:bg-white/10 transition-all duration-300 overflow-hidden rounded-sm"
+                className="group cursor-pointer"
               >
-                <div className="aspect-square bg-white/10 relative overflow-hidden">
+                <div className="aspect-square bg-white/10 relative overflow-hidden border-2 border-white/20 mb-4 group-hover:border-white/50 transition-all duration-300">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -145,12 +145,15 @@ export default function About() {
                       (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%23333'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='%23999'%3EPhoto Coming Soon%3C/text%3E%3C/svg%3E";
                     }}
                   />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
                 </div>
-                <div className="p-6 text-center">
-                  <h4 className="text-xl font-bold text-white">
-                    {member.name}
-                  </h4>
-                </div>
+                
+                <h4 className="text-xl md:text-2xl font-bold tracking-tighter text-white group-hover:translate-x-2 transition-transform duration-300">
+                  {member.name}
+                </h4>
+                
+                {/* Animated underline on hover */}
+                <div className="h-px w-0 bg-white group-hover:w-20 transition-all duration-300 mt-2"></div>
               </motion.div>
             ))}
           </motion.div>

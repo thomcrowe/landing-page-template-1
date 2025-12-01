@@ -97,10 +97,10 @@ export default function Contact() {
                     Email
                   </div>
                   <a
-                    href="mailto:hello@mono.design"
+                    href="mailto:athanasius@dts.org"
                     className="text-white hover:text-white/70 transition-colors"
                   >
-                    frthom@dts.org
+                    athanasius@dts.org
                   </a>
                 </div>
               </div>
@@ -114,10 +114,10 @@ export default function Contact() {
                     Phone
                   </div>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+15555555555"
                     className="text-white hover:text-white/70 transition-colors"
                   >
-                    +1 (918) 346-5014
+                    +1 (555) 555-5555
                   </a>
                 </div>
               </div>
