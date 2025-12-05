@@ -40,7 +40,7 @@ export default function Hero() {
       </div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -55,21 +55,21 @@ export default function Hero() {
             <h1>
               <TextGenerateEffect
                 words="DEAD"
-                className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter"
+                className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold m-0 leading-tight tracking-tighter"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.2}
               />
               <TextGenerateEffect
                 words="THEOLOGIANS"
-                className="text-5xl md:text-7xl lg:text-8xl font-bold m-0 leading-tight tracking-tighter text-neutral-400"
+                className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold m-0 leading-tight tracking-tighter text-neutral-400"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.4}
               />
               <TextGenerateEffect
                 words="SOCIETY"
-                className="text-5xl md:text-7xl lg:text-8xl font-bold m-2 leading-tight tracking-tighter"
+                className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold m-2 leading-tight tracking-tighter"
                 duration={0.5}
                 speed={0.2}
                 initialDelay={0.6}

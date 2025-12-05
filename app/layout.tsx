@@ -22,9 +22,9 @@ export const metadata: Metadata = { // Add Metadata type
   },
   // Add Open Graph metadata
   openGraph: {
-    title: "Dead Theologians Society - MINIMAL BRUTALIST DESIGN",
-    description: "We create minimalist digital experiences that make an impact. Raw, unfiltered, and straight to the point.",
-    url: "https://your-website-url.com", // Replace with your actual website URL
+    title: "Dead Theologians Society",
+    description: "We come together to read the Fathers, pray together, and see how the ancient faith shapes our modern lives.",
+    url: "", // Replace with your actual website URL
     siteName: "Dead Theologians Society",
     images: [
       {
@@ -40,8 +40,8 @@ export const metadata: Metadata = { // Add Metadata type
   // Optional: Add Twitter card metadata if needed
   twitter: {
     card: "summary_large_image",
-    title: "Dead Theologians Society - MINIMAL BRUTALIST DESIGN",
-    description: "We create minimalist digital experiences that make an impact. Raw, unfiltered, and straight to the point.",
+    title: "Dead Theologians Society",
+    description: "We come together to read the Fathers, pray together, and see how the ancient faith shapes our modern lives.",
     // creator: "@yourTwitterHandle", // Optional: Your Twitter handle
     images: ["/image.png"], // Path to your image in the public folder
   },
